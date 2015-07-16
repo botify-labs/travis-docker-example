@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Step 1: INSTALLING DEPS"
+echo "-----------------------"
+
+echo "Installing software 1"
+sleep 1
+echo "Installing software 2"
+sleep 1
+
+echo "ok"
+
+echo "Bootstrap succeeded!"

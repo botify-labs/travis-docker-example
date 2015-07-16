@@ -1,0 +1,5 @@
+FROM travis-docker
+
+RUN echo Some cleanup
+
+#+ ENTRYPOINT, VOLUME, EXPOSE, etc.

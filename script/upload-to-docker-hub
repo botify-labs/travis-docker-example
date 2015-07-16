@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Hey, tests succeeded!"
+echo "Uploading docker image to docker hub..."

@@ -1,0 +1,19 @@
+language: python
+
+sudo: required
+
+dist: trusty
+
+install:
+- docker pull ubuntu
+- docker build -t travis-docker -f Dockerfile.test .
+
+script:
+#only build if tests succeed
+#(NB: the script/build is run *outside* a container in the following command)
+- docker run travis-docker ./script/test
+
+after_success:
+- docker build -t travis-docker-prod -f Dockerfile.prod .
+- ./script/upload-to-docker-hub
+#- notify on Slack \o/

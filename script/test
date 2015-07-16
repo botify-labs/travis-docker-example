@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Step 2: RUNNING TESTS!"
+echo "----------------------"
+
+for i in {1..50}; do
+  sleep 0.1
+  echo -n .
+done
+
+echo "ok"
+
+echo "Tests succeeded!"
